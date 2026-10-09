@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b2545">
+  <meta name="description" content="LandGuard AI helps buyers explore a document verification workflow with synthetic land records, explainable risk signals, and clear reports. Verify before you buy.">
+  <meta property="og:title" content="LandGuard AI — Verify Before You Buy">
+  <meta property="og:description" content="An AI-assisted land document verification prototype built for clearer decisions.">
+  <meta property="og:type" content="website">
+  <title>LandGuard AI — Verify Before You Buy</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Image sources:
+    Hero: https://images.unsplash.com/photo-1510330324285-abbdabff83af?auto=format&fit=crop&w=1400&q=80
+      Source page: https://unsplash.com/photos/aerial-photography-of-green-trees-and-field-during-daytime-ZYohVTeA1xk
+    CTA: https://images.unsplash.com/photo-1602989106211-81de671c23a9?auto=format&fit=crop&w=1200&q=80
+      Source page: https://unsplash.com/photos/green-grass-field-under-blue-sky-during-daytime-6NiUh7ZPumY
+  -->
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="LandGuard AI home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none"><path d="M20 3 35 9v10c0 9-6.2 14.6-15 18C11.2 33.6 5 28 5 19V9l15-6Z" fill="currentColor"/><path d="m12 20 5.2 5L28 14" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span>LandGuard <b>AI</b></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#how-it-works">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#risk-score">Risk Score</a>
+        <a href="#demo">Demo</a>
+        <a href="#faq">FAQ</a>
+        <div class="nav-actions">
+          <a class="button button-small button-outline" href="login.html">Login</a>
+          <a class="button button-small button-primary" href="#demo">Try Demo</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <img class="hero-image" src="https://images.unsplash.com/photo-1510330324285-abbdabff83af?auto=format&amp;fit=crop&amp;w=1400&amp;q=80"
+        srcset="https://images.unsplash.com/photo-1510330324285-abbdabff83af?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w, https://images.unsplash.com/photo-1510330324285-abbdabff83af?auto=format&amp;fit=crop&amp;w=1400&amp;q=80 1400w"
+        sizes="100vw" alt="Aerial view of green fields and trees" width="1400" height="1050" fetchpriority="high" decoding="async">
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> LandTech Innovation Hackathon 2026</p>
+          <h1>Verify Before<br><span>You Buy.</span></h1>
+          <p class="hero-intro">A clearer way to spot inconsistencies in land documents. Explore an AI-assisted workflow built for confident decisions—not legal proof.</p>
+          <div class="hero-actions">
+            <a class="button button-primary button-large" href="upload.html">Upload Document <span aria-hidden="true">→</span></a>
+            <a class="button button-glass button-large" href="#demo"><span class="play-icon" aria-hidden="true">▶</span> Watch Demo</a>
+          </div>
+          <p class="hero-note"><span aria-hidden="true">✳</span> Prototype powered by synthetic land records</p>
+        </div>
+        <aside class="result-card" aria-label="Sample high risk verification result">
+          <div class="result-heading">
+            <span class="result-icon" aria-hidden="true">⌕</span>
+            <div><strong>Verification result</strong><small>Sample analysis · Just now</small></div>
+            <span class="sample-pill">SAMPLE</span>
+          </div>
+          <div class="risk-summary"><div><small>Risk score</small><strong>65<span>/100</span></strong></div><span class="risk-badge high">HIGH RISK</span></div>
+          <div class="mini-meter" aria-hidden="true"><span></span></div>
+          <ul class="result-checks">
+            <li><span>Owner name</span><b class="status-bad">✕ Mismatch</b></li>
+            <li><span>Khatian number</span><b class="status-good">✓ Match</b></li>
+            <li><span>Dag number</span><b class="status-good">✓ Match</b></li>
+            <li><span>Land area</span><b class="status-bad">✕ Mismatch</b></li>
+          </ul>
+          <a href="#demo" class="card-link">Explore interactive demo <span aria-hidden="true">→</span></a>
+        </aside>
+      </div>
+      <a class="scroll-cue" href="#trust" aria-label="Scroll to learn more"><span></span> Scroll to explore</a>
+    </section>
+
+    <section class="trust-strip" id="trust" aria-label="Prototype attributes">
+      <div class="container trust-items">
+        <div><span class="trust-symbol">◈</span><span>Synthetic data prototype</span></div>
+        <div><span class="trust-symbol">⌁</span><span>Explainable AI</span></div>
+        <div><span class="trust-symbol">▤</span><span>PDF-ready reports</span></div>
+        <div><span class="trust-symbol">✳</span><span>Built by Team PROTON</span></div>
+      </div>
+    </section>
+
+    <section class="section problem-section" id="problem">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">The challenge</p>
+          <h2>Land checks shouldn't<br class="desktop-break"> feel like guesswork.</h2>
+          <p>Important details can get lost when buyers have to piece together records on their own.</p>
+        </div>
+        <div class="problem-grid">
+          <article class="problem-card reveal">
+            <div class="icon-box icon-amber" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M10 9h19l9 9v21H10zM29 9v10h9M16 26h16M16 32h11" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="34" cy="34" r="7" fill="var(--surface)" stroke="currentColor" stroke-width="2"/><path d="m39 39 5 5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></div>
+            <span class="card-number">01 / MANUAL PROCESS</span><h3>Too many papers,<br>too many checks.</h3>
+            <p>Comparing deeds, khatian, dag, and area across multiple documents takes time and care.</p>
+          </article>
+          <article class="problem-card reveal">
+            <div class="icon-box icon-green" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M8 14h20v25H8zM20 9h20v25M13 20h10M13 26h8M13 32h7M31 19l3 3 6-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <span class="card-number">02 / HIDDEN CONFLICTS</span><h3>Small mismatches<br>can go unnoticed.</h3>
+            <p>A name variation or area discrepancy may be easy to miss when records are checked separately.</p>
+          </article>
+          <article class="problem-card reveal">
+            <div class="icon-box icon-blue" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M7 18 24 9l17 9v20H7zM17 38V25h14v13M13 20h22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 15v4M21 17h6" stroke="currentColor" stroke-width="2"/></svg></div>
+            <span class="card-number">03 / DECISION SUPPORT</span><h3>Buyers need a<br>clearer starting point.</h3>
+            <p>People deserve an understandable summary of potential inconsistencies before they move forward.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process-section" id="how-it-works">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">Simple by design</p><h2>From documents<br class="mobile-break"> to direction.</h2>
+          <p>Five clear steps turn multiple records into one explainable overview.</p>
+        </div>
+        <div class="steps">
+          <div class="steps-line" aria-hidden="true"><span></span></div>
+          <article class="step reveal"><div class="step-icon"><span>↑</span><i>01</i></div><h3>Upload</h3><p>Add a sample deed or record.</p></article>
+          <article class="step reveal"><div class="step-icon"><span>▤</span><i>02</i></div><h3>Extract</h3><p>Key details are organized.</p></article>
+          <article class="step reveal"><div class="step-icon"><span>⇄</span><i>03</i></div><h3>Compare</h3><p>Fields are checked side by side.</p></article>
+          <article class="step reveal"><div class="step-icon"><span>◉</span><i>04</i></div><h3>Risk score</h3><p>Signals become easy to scan.</p></article>
+          <article class="step reveal"><div class="step-icon"><span>▧</span><i>05</i></div><h3>Report</h3><p>Review a clear summary.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features-section" id="features">
+      <div class="container">
+        <div class="section-heading split-heading reveal">
+          <div><p class="eyebrow">One connected workflow</p><h2>Clarity in every<br>detail.</h2></div>
+          <p>Designed to make complex checks more approachable, with each signal and finding shown in context.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal"><span class="feature-icon">▤</span><h3>AI Document Extraction</h3><p>Turn sample documents into structured, readable fields.</p><a href="#demo" aria-label="See document extraction in demo">↗</a></article>
+          <article class="feature-card reveal"><span class="feature-icon">⇄</span><h3>Cross-Checking</h3><p>Compare owner, khatian, dag, and land area side by side.</p><a href="#demo" aria-label="See cross-checking in demo">↗</a></article>
+          <article class="feature-card reveal"><span class="feature-icon">◉</span><h3>Explainable Risk Score</h3><p>Understand which mismatches influenced the score.</p><a href="#risk-score" aria-label="Learn about risk scores">↗</a></article>
+          <article class="feature-card reveal"><span class="feature-icon">⌁</span><h3>Ownership Timeline</h3><p>See a sample chain of ownership and where a gap appears.</p><a href="#timeline" aria-label="See ownership timeline">↗</a></article>
+          <article class="feature-card reveal"><span class="feature-icon">▦</span><h3>Verification Dashboard</h3><p>Bring key fields and findings into one useful overview.</p><a href="#demo" aria-label="See verification dashboard in demo">↗</a></article>
+          <article class="feature-card reveal"><span class="feature-icon">▧</span><h3>PDF-ready Report</h3><p>Prepare a shareable summary for discussion and review.</p><a href="#demo" aria-label="See report sample">↗</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section score-section" id="risk-score">
+      <div class="container score-layout">
+        <div class="score-copy reveal">
+          <p class="eyebrow eyebrow-light">No mystery math</p><h2>Understand the<br>signals behind<br>the score.</h2>
+          <p>Each factor contributes to an illustrative score. It highlights possible inconsistencies for human review—it is not a verdict.</p>
+          <a class="text-link text-link-light" href="#demo">Try the interactive demo <span>→</span></a>
+        </div>
+        <div class="score-panel reveal">
+          <div class="gauge-wrap">
+            <svg class="score-gauge" viewBox="0 0 240 150" role="img" aria-labelledby="main-gauge-title main-gauge-desc">
+              <title id="main-gauge-title">Sample risk score gauge</title><desc id="main-gauge-desc">A score of 65 out of 100, in the high risk range.</desc>
+              <path class="gauge-track" d="M25 125 A95 95 0 0 1 215 125"/>
+              <path class="gauge-progress high-stroke" d="M25 125 A95 95 0 0 1 215 125" pathLength="100" style="--score:65"/>
+            </svg>
+            <div class="gauge-label"><strong data-gauge-value>65</strong><span>/ 100</span><small data-gauge-level>HIGH RISK</small></div>
+          </div>
+          <div class="weight-list" aria-label="Illustrative risk score weights">
+            <div><span>Owner details</span><b>35%</b></div><div><span>Area mismatch</span><b>20%</b></div><div><span>Dag number</span><b>15%</b></div><div><span>Khatian number</span><b>15%</b></div><div><span>Chain gap</span><b>10%</b></div><div><span>Missing info</span><b>3%</b></div><div><span>Suspicious pattern</span><b>2%</b></div>
+          </div>
+          <div class="score-legend"><span><i class="legend-low"></i>0–29 Low</span><span><i class="legend-medium"></i>30–59 Medium</span><span><i class="legend-high"></i>60–100 High</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section demo-section" id="demo">
+      <div class="container">
+        <div class="section-heading centered reveal"><p class="eyebrow">Explore the prototype</p><h2>One click. A clearer picture.</h2><p>Switch between synthetic examples to see how different details shape a review.</p></div>
+        <div class="demo-shell reveal">
+          <div class="demo-topbar"><div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div><span>LANDGUARD / SAMPLE VERIFICATION</span><span class="demo-live"><i></i> DEMO MODE</span></div>
+          <div class="demo-controls" role="group" aria-label="Choose a sample verification">
+            <button type="button" class="demo-choice is-active" data-demo="clean" aria-pressed="true">Clean match</button>
+            <button type="button" class="demo-choice" data-demo="medium" aria-pressed="false">Medium risk</button>
+            <button type="button" class="demo-choice" data-demo="high" aria-pressed="false">High risk (Rahim deed)</button>
+          </div>
+          <div class="demo-content" aria-live="polite">
+            <div class="document-panel">
+              <div class="panel-heading"><div><span class="panel-icon">▤</span><div><h3>Extracted details</h3><small>Sample deed · <span data-document-name>Deed_sample_01.pdf</span></small></div></div><span class="sample-pill">SAMPLE</span></div>
+              <div class="sample-document">
+                <div class="document-brand"><span class="doc-shield">L</span><span>LAND RECORD SUMMARY<small>DEMO DOCUMENT · NOT OFFICIAL</small></span></div>
+                <div class="doc-rule"></div>
+                <div class="doc-lines"><span></span><span></span></div>
+                <div class="doc-fields"><div><small>OWNER NAME</small><strong data-field="owner">Abdul Karim</strong></div><div><small>KHATIAN NO.</small><strong data-field="khatian">1284</strong></div><div><small>DAG NO.</small><strong data-field="dag">509</strong></div><div><small>LAND AREA</small><strong data-field="area">12.5 decimals</strong></div></div>
+                <div class="doc-stamp">SAMPLE<br>ONLY</div>
+                <div class="doc-bottom"><span>MOCK RECORD · DHAKA DIVISION</span><span>LG—2026</span></div>
+              </div>
+              <p class="document-caption"><span>ⓘ</span> All records shown are synthetic demo data.</p>
+            </div>
+            <div class="comparison-panel">
+              <div class="panel-heading"><div><span class="panel-icon panel-icon-green">⇄</span><div><h3>Cross-verification</h3><small>Compared with sample reference record</small></div></div></div>
+              <div class="table-scroll"><table class="comparison-table"><thead><tr><th scope="col">FIELD</th><th scope="col">UPLOADED</th><th scope="col">REFERENCE</th><th scope="col">RESULT</th></tr></thead><tbody>
+                <tr data-row="owner"><th scope="row">Owner</th><td data-upload="owner">Abdul Karim</td><td data-reference="owner">Abdul Karim</td><td data-status="owner"><span class="table-status good">✓ Match</span></td></tr>
+                <tr data-row="khatian"><th scope="row">Khatian</th><td data-upload="khatian">1284</td><td data-reference="khatian">1284</td><td data-status="khatian"><span class="table-status good">✓ Match</span></td></tr>
+                <tr data-row="dag"><th scope="row">Dag</th><td data-upload="dag">509</td><td data-reference="dag">509</td><td data-status="dag"><span class="table-status good">✓ Match</span></td></tr>
+                <tr data-row="area"><th scope="row">Area</th><td data-upload="area">12.5 decimals</td><td data-reference="area">12.5 decimals</td><td data-status="area"><span class="table-status good">✓ Match</span></td></tr>
+              </tbody></table></div>
+              <div class="demo-result">
+                <div class="demo-gauge" aria-label="Risk score"><svg viewBox="0 0 120 68" aria-hidden="true"><path class="demo-gauge-track" d="M10 60 A50 50 0 0 1 110 60"/><path class="demo-gauge-fill low-stroke" data-demo-gauge d="M10 60 A50 50 0 0 1 110 60" pathLength="100" style="--score:12"/></svg><div><strong data-demo-value>12</strong><small>/100</small></div></div>
+                <div class="demo-result-copy"><span class="risk-badge low" data-demo-badge>LOW RISK</span><h3 data-demo-title>Records align</h3><p data-demo-summary>All key fields match in this sample.</p></div>
+              </div>
+              <div class="reason-box"><strong>What to notice</strong><ul data-demo-reasons><li>No mismatches detected in key sample fields.</li></ul></div>
+            </div>
+          </div>
+          <p class="demo-disclaimer">Illustrative output only. This prototype does not access or verify official government records.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section timeline-section" id="timeline">
+      <div class="container timeline-layout">
+        <div class="timeline-intro reveal"><p class="eyebrow">A chain worth reviewing</p><h2>See the story<br>behind ownership.</h2><p>A simple timeline makes it easier to notice where a supporting record may be missing.</p><a class="text-link" href="#demo">Explore a sample check <span>→</span></a></div>
+        <div class="timeline-card reveal">
+          <div class="timeline-head"><div><span class="panel-icon">⌁</span><div><h3>Ownership timeline</h3><small>Illustrative chain · SAMPLE</small></div></div><span class="timeline-tag">3 events</span></div>
+          <div class="timeline-track">
+            <article class="timeline-event"><span class="timeline-dot"></span><div><small>1988 · RECORDED</small><h4>First recorded owner</h4><p>Abdul Mannan <span>· Khatian 1284</span></p></div><span class="event-check">✓</span></article>
+            <div class="timeline-gap"><span class="gap-line"></span><div><b>!</b><span><strong>Missing record gap</strong><small>Supporting transfer document not present in sample</small></span></div><span class="gap-line"></span></div>
+            <article class="timeline-event"><span class="timeline-dot"></span><div><small>2012 · RECORDED</small><h4>Recorded transfer</h4><p>Abdul Karim <span>· Deed sample 2012/44</span></p></div><span class="event-check">✓</span></article>
+            <article class="timeline-event"><span class="timeline-dot current"></span><div><small>2026 · UNDER REVIEW</small><h4>Current sample document</h4><p>Buyer review <span>· Prototype record</span></p></div><span class="event-current">NOW</span></article>
+          </div>
+          <p class="timeline-note"><span>ⓘ</span> Timeline is illustrative; a gap is a review prompt, not a finding of fraud.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container faq-layout">
+        <div class="faq-intro reveal"><p class="eyebrow">Good to know</p><h2>Questions,<br>answered.</h2><p>Understand what this prototype can—and cannot—tell you.</p><a href="#demo" class="text-link">Try the demo <span>→</span></a></div>
+        <div class="faq-list reveal">
+          <article class="faq-item"><h3><button type="button" aria-expanded="true" aria-controls="faq-answer-1" id="faq-question-1">Does LandGuard AI verify official land records?<span class="faq-plus" aria-hidden="true"></span></button></h3><div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1"><p>No. This hackathon prototype uses synthetic records and does not connect to government systems or verify official ownership.</p></div></article>
+          <article class="faq-item"><h3><button type="button" aria-expanded="false" aria-controls="faq-answer-2" id="faq-question-2">What does a risk score mean?<span class="faq-plus" aria-hidden="true"></span></button></h3><div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2" hidden><p>It summarizes potential inconsistencies in the sample inputs. The score is a decision-support signal—not proof of fraud, a legal opinion, or proof of ownership.</p></div></article>
+          <article class="faq-item"><h3><button type="button" aria-expanded="false" aria-controls="faq-answer-3" id="faq-question-3">What information is checked in the demo?<span class="faq-plus" aria-hidden="true"></span></button></h3><div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3" hidden><p>The interactive samples compare owner name, khatian number, dag number, and land area, and may show an illustrative ownership-chain gap.</p></div></article>
+          <article class="faq-item"><h3><button type="button" aria-expanded="false" aria-controls="faq-answer-4" id="faq-question-4">Can I use this instead of professional advice?<span class="faq-plus" aria-hidden="true"></span></button></h3><div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4" hidden><p>No. Always consult qualified legal and land professionals and obtain independent verification through authorized channels before making a decision.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <img class="cta-image" src="https://images.unsplash.com/photo-1602989106211-81de671c23a9?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+        srcset="https://images.unsplash.com/photo-1602989106211-81de671c23a9?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w, https://images.unsplash.com/photo-1602989106211-81de671c23a9?auto=format&amp;fit=crop&amp;w=1200&amp;q=80 1200w"
+        sizes="100vw" alt="Green field beneath an open sky" width="1200" height="800" loading="lazy" decoding="async">
+      <div class="cta-shade"></div>
+      <div class="container cta-content reveal"><p class="eyebrow eyebrow-light">A smarter first step</p><h2>Make your next land<br>decision with more clarity.</h2><p>Explore the sample workflow. See how a better-organized review could feel.</p><a href="#demo" class="button button-primary button-large">Try the interactive demo <span>→</span></a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand"><a class="brand brand-footer" href="#home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 3 35 9v10c0 9-6.2 14.6-15 18C11.2 33.6 5 28 5 19V9l15-6Z" fill="currentColor"/><path d="m12 20 5.2 5L28 14" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>LandGuard <b>AI</b></span></a><p>Clearer decisions start with better questions.</p></div>
+      <div class="footer-links"><div><strong>Explore</strong><a href="#how-it-works">How it works</a><a href="#features">Features</a><a href="#demo">Demo</a></div><div><strong>About</strong><span>Team PROTON</span><span>LandTech Innovation<br>Hackathon 2026</span></div></div>
+    </div>
+    <div class="container footer-bottom">
+      <p class="disclaimer">Prototype using synthetic land records. Risk score indicates potential inconsistencies, not proof of fraud or legal ownership.</p>
+      <p class="image-credits">Image credits: Photo by <a href="https://unsplash.com/@weshicks" target="_blank" rel="noopener noreferrer">Wes Hicks</a> on <a href="https://unsplash.com/photos/aerial-photography-of-green-trees-and-field-during-daytime-ZYohVTeA1xk" target="_blank" rel="noopener noreferrer">Unsplash</a> (hero); photo by <a href="https://unsplash.com/@fajruddinnm" target="_blank" rel="noopener noreferrer">Fajruddin Mudzakkir</a> on <a href="https://unsplash.com/photos/green-grass-field-under-blue-sky-during-daytime-6NiUh7ZPumY" target="_blank" rel="noopener noreferrer">Unsplash</a> (CTA).</p>
+      <span class="copyright">© 2026 Team PROTON · Made for learning</span>
+    </div>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
